@@ -5,7 +5,7 @@
  echo "This program converts from bigendian binary files (>f4) to 3D numpy matrix, extracts surface layer data at Z=0 for each month, and combines them into one array ----> 'combined.npy'."
  echo ""
  echo ""
- echo "NOTE --> Please ensure that 'convert_and_combine.sh', binary_to_npy.py' and 'combine_arrays.py' are in the same same folder as you binary '.data' files."
+ echo "NOTE --> Please ensure that 'convert_and_combine.sh', binary_to_npy.py' and 'combine_arrays.py' are in the same same folder as your binary '.data' files."
  echo ""
  echo "**************************************************************************"
  echo ""
