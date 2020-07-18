@@ -14,11 +14,13 @@
  export depth=$depth
  export root="depth"$depth
  mkdir "depth"$depth
+ echo "Please enter number of months: e.g. '6' will return months 1 to 6 combined: "
+ read N
+ export num_months=$N
 
  cwd=$(pwd)
  file_path=$cwd
  month=1
- 
  progressbar () {
  
     trap 'break' USR1
