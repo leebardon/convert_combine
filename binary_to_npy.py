@@ -9,8 +9,9 @@ binary = os.environ["binary"]
 out_filename = "month{}.npy".format(month)
 
 arr = np.fromfile(f'{binary}', dtype='>f4')
+#data = data.byteswap().newbyteorder()
 arr.shape = (22,90,144)
-sliced = arr[0,:,:]
+sliced = arr[0]
 
 np.save(f'{root}/{out_filename}', sliced)
 
