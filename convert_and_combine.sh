@@ -1,4 +1,7 @@
  #/bin/bash
+ module load anaconda3/4.4.0 
+ source activate lee1
+
  echo ""
  echo "**************************************************************************"
  echo ""
@@ -42,8 +45,7 @@
             ((month=month+1))
         done
 
-        cp $(pwd)/depth0/month1.npy $(pwd)/depth0/combined.npy
-        python combine_arrays.py
+	python combine_arrays.py
         rm $(pwd)/depth0/month*.npy
         
     kill -s USR1 "$pid"
