@@ -5,9 +5,9 @@
 
 It applies to N-monthly files stored in the '.data' format, and returns a (T,Y,X) numpy matrix of shape (N,90,144).
 
- * Extract surface data for physical quantities (SSS, SST, etc) contained in big-endian binary files (>f4) saved in .data format
+ * Extract surface data for physical quantities (SSS, SST, etc) contained in big-endian binary files (>f4) (saved in .data format)
  * Convert from binary to 3D numpy matrix of shape (22,90,144)
- * Slice only the surface-level data, leaving a matrix of shape (144, 90,)
+ * Slice the surface-level data, leaving a matrix of shape (144, 90,)
  * Combine surface data for each monthly dataset (N)
  * Produce a folder in current directory (depth0) with a combined numpy matrix of shape (N,90,144)  
   
