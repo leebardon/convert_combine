@@ -3,13 +3,13 @@
 <b>This program extracts monthly oceanic data from MITgcm output files at Z=0 (ocean surface).</b>
 
 
-It applies to N-monthly files stored in the '.data' format, and returns a numpy matrix of shape (144, 90, N).
+It applies to N-monthly files stored in the '.data' format, and returns a (T,Y,X) numpy matrix of shape (N,90,144).
 
- * Extract surface data for physical quantities (SSS, SST, etc) contained in big-endian binary files (>f4) saved in .data format
- * Convert from binary to 3D numpy matrix of shape (144,90,22)
- * Slice only the surface-level data, leaving a matrix of shape (144, 90,)
+ * Extract surface data for physical quantities (SSS, SST, etc) contained in big-endian binary files (>f4) (saved in .data format)
+ * Convert from binary to 3D numpy matrix of shape (22,90,144)
+ * Slice the surface-level data, leaving a matrix of shape (144, 90,)
  * Combine surface data for each monthly dataset (N)
- * Produce a folder in current directory (depth0) with a combined numpy matrix of shape (144, 90, N)  
+ * Produce a folder in current directory (depth0) with a combined numpy matrix of shape (N,90,144)  
   
 
 <h3> To Run </h3> 
